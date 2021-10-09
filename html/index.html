@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/sass/style.css" />
+		<title>Online WineStore</title>
+	</head>
+	<body>
+		<header class="heroContainer opacityAnimation">
+			<div class="popUpMenu closed">
+				<a href="#s2" class="shrink-border mnBtn">ABOUT US</a>
+				<a href="#s3" class="shrink-border mnBtn">OUR WINE</a>
+				<a href="#s4" class="shrink-border mnBtn">TIERS</a>
+				<a href="#s5" class="shrink-border mnBtn">REVIEWS</a>
+			</div>
+			<a href="#" class="logoIcon fade-in-bottom-0-delay"
+				><i class="fas fa-wine-glass-alt"></i> WINEGOOD</a
+			>
+			<div class="middleSection">
+				<h1 class="fade-in-bottom-04s-delay">WineStore</h1>
+				<h2 class="fade-in-bottom-05s-delay">Landing Page</h2>
+				<a href="#" class="btn btn-white fade-in-bottom-06s-delay"
+					>Get Started</a
+				>
+			</div>
+			<a href="#" class="menuIcon fade-in-bottom-01s-delay" id="menuIcon"
+				><i class="fas fa-bars"></i
+			></a>
+		</header>
+
+		<div class="section2Container popOnScroll" id="s2">
+			<h1>Wine taste good, yummy yummy!</h1>
+			<div class="contentContainer">
+				<div class="imgContainer">
+					<div id="loadingBar"></div>
+				</div>
+				<div class="textContainer">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis
+						sunt odio voluptate vitae expedita assumenda atque perspiciatis
+						ratione quibusdam. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. In omnis sunt odio voluptate vitae expedita
+						assumenda atque perspiciatis ratione quibusdam. Lorem ipsum dolor
+						sit amet consectetur adipisicing elit. In omnis sunt odio voluptate
+						vitae expedita assumenda atque perspiciatis ratione quibusdam.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis
+						sunt odio voluptate vitae expedita assumenda atque perspiciatis
+						ratione quibusdam. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. In omnis sunt odio voluptate vitae expedita
+						assumenda atque perspiciatis ratione quibusdam. Lorem ipsum dolor
+						sit amet consectetur adipisicing elit. In omnis sunt odio voluptate
+						vitae expedita assumenda atque perspiciatis ratione quibusdam.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis
+						sunt odio voluptate vitae expedita assumenda atque perspiciatis
+						ratione quibusdam. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. In omnis sunt odio voluptate vitae expedita
+						assumenda atque perspiciatis ratione quibusdam. Lorem ipsum dolor
+						sit amet consectetur adipisicing elit. In omnis sunt odio voluptate
+						vitae expedita assumenda atque perspiciatis ratione quibusdam.
+						<span><a href="#">Learn More!</a></span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section3 popOnScroll" id="s3">
+			<div class="cardsContainer">
+				<div class="card">
+					<a href="#"><i class="fas fa-wine-bottle"></i></a>
+					<p>BEST BOTTLE</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="card">
+					<a href="#"><i class="fas fa-copyright"></i></a>
+					<p>BEST BRANDING</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="card">
+					<a href="#"><i class="fas fa-wine-glass"></i></a>
+					<p>BEST GRAPES</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section4 popOnScroll" id="s4">
+			<h1 id="pleaseBuyWine">Just buy some wine please</h1>
+			<div class="tiersContainer">
+				<div class="flip-card rotate-card">
+					<div class="flip-card-inner rotate-inner">
+						<div class="flip-card-front">
+							<div id="firstTierImg"></div>
+							<a href="#" id="firstTierText">FIRST TIER</a>
+							<p>3 Bottles a week</p>
+							<div class="separator"></div>
+							<p>3 Bottles a week</p>
+							<div class="separator"></div>
+							<p>3 Bottles a week</p>
+							<div class="separator"></div>
+							<p>3 Bottles a week</p>
+							<div class="separator"></div>
+							<p>3 Bottles a week</p>
+						</div>
+						<div class="flip-card-back" id="first-card-back">
+							<p>Only</p>
+							<h1>9.99<span>$</span></h1>
+							<a href="#" class="btn btn-white fade-in-bottom-06s-delay"
+								>Buy Now!</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card rotate-card">
+					<div class="flip-card-inner rotate-inner">
+						<div class="flip-card-front">
+							<div id="secondTierImg"></div>
+							<a href="#" id="secondTierText">SECOND TIER</a>
+							<p>5 Bottles a week</p>
+							<div class="separator"></div>
+							<p>5 Bottles a week</p>
+							<div class="separator"></div>
+							<p>5 Bottles a week</p>
+							<div class="separator"></div>
+							<p>5 Bottles a week</p>
+							<div class="separator"></div>
+							<p>5 Bottles a week</p>
+						</div>
+						<div class="flip-card-back" id="second-card-back">
+							<p>Only</p>
+							<h1>14.99<span>$</span></h1>
+							<a href="#" class="btn btn-white fade-in-bottom-06s-delay"
+								>Buy Now!</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card rotate-card">
+					<div class="flip-card-inner rotate-inner">
+						<div class="flip-card-front">
+							<div id="thirdTierImg"></div>
+							<a href="#" id="thirdTierText">THIRD TIER</a>
+							<p>7 Bottles a week</p>
+							<div class="separator"></div>
+							<p>7 Bottles a week</p>
+							<div class="separator"></div>
+							<p>7 Bottles a week</p>
+							<div class="separator"></div>
+							<p>7 Bottles a week</p>
+							<div class="separator"></div>
+							<p>7 Bottles a week</p>
+						</div>
+						<div class="flip-card-back" id="third-card-back">
+							<p>Only</p>
+							<h1>19.99<span>$</span></h1>
+							<a href="#" class="btn btn-white fade-in-bottom-06s-delay"
+								>Buy Now!</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section5" id="s5">
+			<div class="review">
+				<img class="userPhoto" src="" alt="N/A" />
+				<div>
+					<p class="userName p-review">NOMBRE DEL MAN</p>
+
+					<p class="p-review">good wine2</p>
+				</div>
+			</div>
+			<div class="review">
+				<img class="userPhoto" src="" alt="N/A" />
+				<div>
+					<p class="userName p-review">NOMBRE DEL MAN</p>
+
+					<p class="p-review">good wine2</p>
+				</div>
+			</div>
+		</div>
+
+		<a href="#" class="toTop"><i class="fas fa-home"></i></a>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
+			integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="../js/app.js"></script>
+	</body>
+</html>

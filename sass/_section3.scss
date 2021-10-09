@@ -1,0 +1,70 @@
+.section3 {
+	padding: 30rem 5rem 30rem 5rem;
+	background: linear-gradient(#6152a548, #6152a548),
+		url('https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80');
+	clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+	background-size: cover;
+	background-position: right;
+
+	.cardsContainer {
+		@include centerInContainer;
+		flex-wrap: wrap;
+		gap: 10rem;
+		.card {
+			cursor: default;
+			height: 400px;
+			width: 300px;
+			border-radius: 10px;
+			box-shadow: 0 5px 9px rgba(0, 0, 0, 0.527);
+			background-color: rgba(255, 255, 255, 0.65);
+			@include centerInContainerColumn;
+			gap: 0.5rem;
+			transition: 0.2s ease-in-out;
+
+			&:hover {
+				transform: scale(1.1);
+				background-color: rgba(255, 255, 255, 0.95);
+			}
+
+			&:hover:nth-of-type(1) a {
+				transform: rotateZ(25deg);
+			}
+			&:hover:nth-of-type(2) a {
+				transform: rotateZ(180deg);
+			}
+			&:hover:nth-of-type(3) a {
+				transform: rotateZ(-25deg);
+			}
+
+			a {
+				transition: 0.4s ease-in-out;
+				cursor: default;
+				font-size: 8rem;
+				background: -webkit-linear-gradient(180deg, $color-main, $light-violet);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-shadow: 0 0 3px rgba(0, 0, 0, 0.349);
+			}
+
+			p {
+				padding: 1.2rem;
+				color: rgb(48, 48, 48);
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+				font-size: 1.3rem;
+
+				&:first-of-type {
+					font-size: 1.5rem;
+					letter-spacing: 5px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1450px) {
+	.section3 {
+		padding: 25rem 5rem 25rem 5rem;
+		clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+	}
+}
