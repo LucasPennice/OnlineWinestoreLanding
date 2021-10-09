@@ -1,0 +1,103 @@
+.popUpMenu {
+	position: absolute;
+	border-radius: 0px;
+	height: 0vh;
+	width: 0vw;
+	background: linear-gradient($color-main, $dark-color);
+	z-index: 1;
+	transition: opacity 0.2s ease-in-out;
+	@include centerInContainerColumn;
+	display: none;
+
+	a {
+		color: $white-color;
+		font-size: clamp(0.5rem, 5vh, 3rem);
+		padding: 0.5rem 1rem;
+		border: solid 1px rgba(255, 255, 255, 0);
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			border: solid 1px white;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: clamp(0.5rem, 5vh, 3rem);
+		}
+	}
+}
+
+.closed {
+	opacity: 0;
+}
+
+.heroContainer {
+	height: 90vh;
+	background: linear-gradient(
+			to right,
+			rgba($color-main, 0.7),
+			rgba($color-main, 0.1)
+		),
+		url(https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+	background-size: cover;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	position: relative;
+	@include centerInContainer;
+
+	.logoIcon {
+		@include iconStyle;
+		color: $white-color;
+		top: 20px;
+		left: 20px;
+		transition: 0.2s ease-in-out;
+		font-size: clamp(0.5rem, 5vw, 3rem);
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	.menuIcon {
+		position: absolute;
+		transition: 0.2s ease-in-out;
+		text-align: center;
+		text-align: center;
+		top: 20px;
+		right: 20px;
+		color: $dark-color;
+		font-size: clamp(0.5rem, 5vw, 2rem);
+		height: clamp(0.5rem, 7vw, 3rem);
+		width: clamp(0.5rem, 7vw, 3rem);
+		border-radius: 50%;
+		background-color: $white-color;
+		z-index: 2;
+		@include centerInContainer;
+
+		&:hover {
+			@include onHover;
+			box-shadow: 0 0 3px $dark-color;
+		}
+	}
+
+	.middleSection {
+		text-align: center;
+		width: clamp(250px, 75vw, 600px);
+
+		h1,
+		h2 {
+			text-transform: uppercase;
+			color: $white-color;
+			cursor: default;
+		}
+
+		h1 {
+			font-size: clamp(1rem, 7vw, 4rem);
+			letter-spacing: 10px;
+		}
+		h2 {
+			font-size: clamp(0.5rem, 5vw, 2rem);
+			opacity: 0.8;
+			letter-spacing: 2px;
+		}
+	}
+}
